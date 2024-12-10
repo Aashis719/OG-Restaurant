@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 
 <body>
@@ -40,31 +41,31 @@
                 </div>
             </div>
 
-            <div class="secondnav">
+            <div class="secondnav" >
                 <div class="logo">
                     <img src="logo.png" alt="image" height="120">
                 </div>
                 <div class="details">
                     <ul id="sidebar">
-                        <li id="cross" onclick="hideSidebar()"><a href=""><i class="fa fa-times" aria-hidden="true"
+                        <li id="cross" onclick="hideSidebar()"><a ><i class="fa fa-times" aria-hidden="true"
                                     style="color:white; "></i> CLOSE</a></li>
-                        <li><a href="">HOME</a></li>
+                        <li><a href="#home">HOME</a></li>
                         <li><a href="#menu" >MENU</a></li>
-                        <li><a href="#aboutus" target="_blank">ABOUT US</a></li>
-                        <!-- <li><a href="">ORDER ONLINE</a></li> -->
                         <li><a href="#reserve" >RESERVATION</a></li>
+                        <li><a href="#aboutus" ">ABOUT US</a></li>
+                        <!-- <li><a href="">ORDER ONLINE</a></li> -->   
                         <div id="hidden-buttons">
-                            <button class="bt1">Find Table</button>
-                            <button class="bt2" id="log" onclick="OpenLogin()">Log In</button>
+                            <button class="bt1"><a href="#reserve"> Find Table</a></button>
+                            <!-- <button class="bt2" id="log" onclick="OpenLogin()">Log In</button> -->
                         </div>
                     </ul>
                     <ul>
                         <li id="hide"><a href="">HOME</a></li>
                         <li id="hide"><a href="#menu" >MENU</a></li>
+                            <li id="hide"><a href="#reserve" ">RESERVATION</a></li>
                         <li id="hide"><a href="#aboutus">ABOUT
                                 US</a></li>
                         <!-- <li id="hide"><a href="">ORDER ONLINE</a></li> -->
-                        <li id="hide"><a href="#reserve" ">RESERVATION</a></li>
                         <li id="info" onclick="showSidebar()"><a href="#"><i class="fa fa-bars" ari aria-hidden="true"
                                     style="color: white;"></i> info
                             </a></li>
@@ -177,10 +178,7 @@
                 <div class="appetizer">
                     <div class="appetizerdetail">
                         <h1>We Offer Top Notch</h1>
-                        Lorem ipsum dolor sit amet consectetur elit. Autem doloremque perspiciatis veritatis, deleniti
-                        ex
-                        quisquam eaque harum vero itaque voluptatibus maxime error soluta?
-
+                        Kick off your meal with our irresistible appetizers, crafted to delight your taste buds and set the tone for a memorable dining experience.
                     </div>
                     <div class="appetizerphoto">
                         <img src="appetizer.jpg">
@@ -560,9 +558,10 @@
             <p> © <a href="#home" >OGRestaurant</a>, Note: This is a 1st Sem Project with no original existence of the Restaurant.</p>
         </div>
     </section>
+    <a href="#home"><i class="fa-solid fa-arrow-up fa-2xl" style="color: white; position: fixed; bottom: 50px; right: 20px;"></i></a>
 
     <script src="java.js"></script>
 
 </body>
 
-</html>
+</html>/
