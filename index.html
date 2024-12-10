@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="home" id="home">
+        <header>
+            <div class="firstnav">
+                <div id="pinlocation">
+                    <span id="pinlocation1">
+                        <i class="fa fa-map-marker" aria-hidden="true" style="color:white;"></i>
+                        Bhaktapur, Nepal
+                    </span>
+                    <span id="pinlocation2">
+                        <i class="fa fa-clock-o" aria-hidden="true" style="color:white;"></i>
+
+                        Daily : 8:00 AM to 9:00 PM
+                    </span>
+                </div>
+                <div id="pinlocation">
+                    <span id="pinlocation1">
+                        <i class="fa fa-phone" aria-hidden="true" style="color:white;"></i>
+                        +9737643778
+                    </span>
+                    <span id="pinlocation2">
+                        <i class="fa fa-envelope-o" aria-hidden="true" style="color:white;"></i>
+                        og.restaurant122@gmail.com
+                    </span>
+                </div>
+            </div>
+
+            <div class="secondnav">
+                <div class="logo">
+                    <img src="logo.png" alt="image" height="120">
+                </div>
+                <div class="details">
+                    <ul id="sidebar">
+                        <li id="cross" onclick="hideSidebar()"><a href=""><i class="fa fa-times" aria-hidden="true"
+                                    style="color:white; "></i> CLOSE</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="#menu" >MENU</a></li>
+                        <li><a href="#aboutus" target="_blank">ABOUT US</a></li>
+                        <!-- <li><a href="">ORDER ONLINE</a></li> -->
+                        <li><a href="#reserve" >RESERVATION</a></li>
+                        <div id="hidden-buttons">
+                            <button class="bt1">Find Table</button>
+                            <button class="bt2" id="log" onclick="OpenLogin()">Log In</button>
+                        </div>
+                    </ul>
+                    <ul>
+                        <li id="hide"><a href="">HOME</a></li>
+                        <li id="hide"><a href="#menu" >MENU</a></li>
+                        <li id="hide"><a href="#aboutus">ABOUT
+                                US</a></li>
+                        <!-- <li id="hide"><a href="">ORDER ONLINE</a></li> -->
+                        <li id="hide"><a href="#reserve" ">RESERVATION</a></li>
+                        <li id="info" onclick="showSidebar()"><a href="#"><i class="fa fa-bars" ari aria-hidden="true"
+                                    style="color: white;"></i> info
+                            </a></li>
+
+
+                    </ul>
+                </div>
+                <div id="btn">
+
+                   <a href="#reserve"><button class="bt1" id="hide">Find Table</button></a> 
+                    <button class="bt2" id="log" onclick="OpenLogin()">Log In</button>
+                </div>
+            </div>
+        </header>
+        <main id="body1">
+            <div class="main-heading">
+                <h>"Experience authentic <br>Nepalese cuisine" </h>
+                <p>Savor culinary <b>EXCELLENCE</b> in a cozy ambiance.<br>
+                    <span id="highlight">Finest ingredients, warm hospitality,and</span>
+                    <br> unforgettable flavors await you!
+                </p>
+            </div>
+            <!--image slider start-->
+            <div class="slider">
+                <div class="slides">
+                    <!--radio button start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- <input type="radio" name="radio-btn" id="radio5"> -->
+                    <!--radio button end-->
+                    <!--slide image start-->
+                    <div class="slide first">
+                        <img src="nep2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="nep3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="nep1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Fourth.png" alt="">
+                    </div>
+                    <!--slide image end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <!-- <div class="auto-btn5"></div> -->
+                    </div>
+                    <!--automatic navigation end-->
+
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <!-- <label for="radio5" class="manual-btn"></label> -->
+                </div>
+                <!--manual navigation end-->
+            </div>
+            <!--image slider end-->
+        </main>
+        <section>
+            <div class="login">
+
+
+                <div class="format">
+                    <span class="cross-walla" onclick="HideLogin()"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></span>
+                    <h1>Log In</h1>
+
+                    <input type="text" id="first" name="text" class="inputwallalogin" required>
+                    <label for="name" class="labelwallalogin">Email or Phone number</label>
+                    <input type="password" name="Password" class="inputwallalogin2" required>
+                    <label for="password" class="labelwallalogin2">Password</label>
+                    <button type="submit">Log In</button>
+
+                    <br>
+                    <div class="lastko"> <!-- <div><input type="checkbox" id="check" > 
+             <span>Remember me</span></div> -->
+                        <span><a href="">Create account</a></span>
+                        <span><a href="">Need help?</a></span> <!-- here set the link of contact page -->
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <section id="menu">
+        <div class="mainbody">
+            <div class="menubody">
+                <div class="breakfast">
+                    <div class="breakfastphoto">
+                        <img src="break.jpg">
+                    </div>
+                    <h1>Breakfast</h1>
+                    <a href="#breakfast">View Menu</a>
+                </div>
+                <div class="appetizer">
+                    <div class="appetizerdetail">
+                        <h1>We Offer Top Notch</h1>
+                        Lorem ipsum dolor sit amet consectetur elit. Autem doloremque perspiciatis veritatis, deleniti
+                        ex
+                        quisquam eaque harum vero itaque voluptatibus maxime error soluta?
+
+                    </div>
+                    <div class="appetizerphoto">
+                        <img src="appetizer.jpg">
+                    </div>
+                    <h1>Appetizer</h1>
+                    <a href="#appetizer">View Menu</a>
+                </div>
+                <div class="dinner">
+                    <div class="dinnerphoto">
+                        <img src="dinner.jpg">
+                    </div>
+                    <h1>Dinner</h1>
+                    <a href="#dinner">View Menu</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="menucontent">
+            <p id="breakfast"></p>
+            <div class="breakfastmenu">
+
+                <div class="menubreakfast">
+                    <H1>Breakfast</H1>
+                    <div class="bitem1">
+                        <div class="img">
+                            <img src="masalatea-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Masala Tea</h2>
+                            Masala tea offers a delightful combination of bold tea flavor & aromatic spices, creating a
+                            unique and satisfying drinking experience.
+
+                            
+                        </div>
+                    </div>
+                    <div class="bitem2">
+                        <div class="img">
+                            <img src="break4-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Nepali Breakfast</h2>
+                            Nepali Breakfast consists of Selroti, Chickpea<br> curry,Potato curry & Masala tea,
+                            creating
+                            a burst <br>of flavors to start the day.<Br>
+                    
+                        </div>
+                    </div>
+                    <div class="bitem3">
+                        <div class="img">
+                            <img src="break3-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>French Breakfast</h2>
+                            French breakfast emphasizes freshness, and quality ingredients. It's often enjoyed
+                            leisurely, savoring the flavors of the meal before starting the day.
+                    
+                        </div>
+                    </div>
+
+                    <div class="bitem4">
+                        <div class="img">
+                            <img src="break2-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>American Breakfast</h2>
+                            American breakfast is diverse and varies greatly <Br>depending on regional preferences and
+                                <Br> individual tastes.
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="appetizermenu">
+                <p id="appetizer"></p>
+                <div class="menuappetizer">
+                    <h1>Appetizer</h1>
+                    <div class="aitem1">
+                        <div class="img">
+                            <img src="appe1-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Chatamari Bara</h2>
+                            A popular Newari dish, Chatamari is rice flour batter with various toppings & Bara is lentil
+                            pancake with toppings.
+                        
+                        </div>
+                    </div>
+                    <div class="aitem2">
+                        <div class="img">
+                            <img src="appe2-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Mo:Mo:</h2>
+                            Momo is a popular dish originating from Tibet & <br>Nepal, made by stuffing dough wrappers
+                            with a<br> savory filling and a blend of spices.
+                        
+                        </div>
+                    </div>
+                    <div class="aitem3">
+                        <div class="img">
+                            <img src="appe3-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Burger</h2>
+                            A burger is a popular sandwich consisting of a cooked patty of ground meat or vegetarian
+                            alternatives like tofu.
+                        
+                        </div>
+                    </div>
+                    <div class="aitem4">
+                        <div class="img">
+                            <img src="appe4-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Chowmein</h2>
+                            Chow mein is a popular Chinese stir-fried noodle <Br>dish that has become widely enjoyed.
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="dinnermenu">
+                <p id="dinner"></p>
+                <div class="menudinner">
+                    <h1>Dinner</h1>
+                    <div class="ditem1">
+                        <div class="img">
+                            <img src="dinner1-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Thakali Set</h2>
+                            Thakali Khana is a traditional Nepali meal that originates from the Thakali community,rich
+                            flavors and nutritional balance.
+                    
+                        </div>
+                    </div>
+
+                    <div class="ditem2">
+                        <div class="img">
+                            <img src="dinner2-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Lamb Chop</h2>
+
+                            Lamb chops are a popular and flavorful cut of<br> meat obtained from the ribs of young
+                            sheep.
+                        
+                        </div>
+                    </div>
+
+                    <div class="ditem3">
+                        <div class="img">
+                            <img src="dinner3-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Steak & Mashed Potato</h2>
+                            Steak and mashed potatoes is a classic and comforting dish enjoyed by many around the world.
+                            <br>
+                        
+                        </div>
+
+                    </div>
+                    <div class="ditem4">
+                        <div class="img">
+                            <img src="dinner5-modified.png">
+                        </div>
+                        <div class="details">
+                            <h2>Pizza</h2>
+                            Pizza is a globally beloved dish that originated<br> in Italy but has become immensely popular<br>
+                            worldwide.
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <div class="line-walla"></div>
+    <!-- reservation  -->
+   
+    
+   
+<p id="reserve"></p>
+    <section class="og-reservation">
+        <div class="reservation-container">
+            <div class="image-section">
+                <img src="sitting.jpeg" alt="Reserved Table">
+            </div>
+            <div class="form-section">
+                <h1>Online Reservation</h1>
+                <p>Booking request <a href="tel:+9737643778">+9737643778</a> or fill out the form</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div class="input-group">
+                        <input type="hidden" name="access_key" value="1939e676-02db-4786-94b5-b2beafad7be0">
+
+
+                        <input type="text" name="Customer Name" class="inputwalla" required>
+                        <label for="name" class="labelwalla">Your Name</label>
+
+
+
+                        <input type="tel" class="inputwalla2" id="phone" name="phone" required>
+                        <label for="phone" class="labelwalla2">Phone Number</label>
+                        <label for="persons" class="arko">Number of Persons</label>
+                        <select id="persons" name="No. of Person:" required>
+                            <option value="1">1 person</option>
+                            <option value="2">2 persons</option>
+                            <option value="3">3 persons</option>
+                            <option value="4">4 persons</option>
+                            <option value="5">5 persons</option>
+                            <option value="6">6 persons</option>
+                            <option value="7">7 persons</option>
+                            <option value="8">8 persons</option>
+                            <option value="9">9 persons</option>
+                        </select>
+
+                        <label for="date" class="arko">Date</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="time" class="arko">Time</label>
+                        <input type="time" id="time" name="time" required>
+
+                        <label for="message" class="arko">Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here!" required></textarea>
+                    </div>
+
+
+                    <button type="submit">BOOK A TABLE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<div class="line-walla"></div>
+    <!-- About Us walla  -->
+    <section class="Aboutus">
+        <p id="aboutus"></p>
+        <!-- 
+            <header id="About-head">
+                <h1>ABOUT US</h1>
+            </header> -->
+
+        <section class="our-story">
+            <h2>Our Story</h2>
+            <div class="story-content">
+                <img src="story.jpg" alt="Our Story Image">
+                <p>Welcome to OG Restaurant, a classic family restaurant where we serve delicious and Authentic Nepali
+                    food. Our journey began in 2018 when I, along with my close friend, decided to create a place where
+                    people could enjoy heartwarming meals in a cozy and welcoming atmosphere. Our passion for food and
+                    dedication to quality has driven us from the beginning, and it continues to inspire us every day. At
+                    OG Restaurant, we believe in the joy of sharing great food with family and friends, and we strive to
+                    make every meal a memorable experience for our guests.</p>
+            </div>
+        </section>
+        <div class="line-walla"></div>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="profile-cards">
+                <!-- Manager 1 -->
+                <div class="profile-card">
+                    <img src="Prabesh.jpg" alt="Manager 1">
+                    <h3>Prabesh Bhandari</h3>
+                    <p>Owner</p>
+                    <div class="social-media">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100055741815637" target="_blank"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- Manager 2 -->
+                <div class="profile-card">
+                    <img src="pranav.jpg" alt="Manager 2">
+                    <h3>Pranav Neupane</h3>
+                    <p>Manager</p>
+                    <div class="social-media">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/pranav.neupane.3" target="_blank"><i class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- Supervisor -->
+                <div class="profile-card long-name">
+                    <img src="sanajit.jpg" alt="Supervisor">
+                    <h3>Sanajit Rana Magar</h3>
+                    <p>Supervisor</p>
+                    <div class="social-media">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100069845550014" target="_blank"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+
+                <div class="profile-card">
+                    <img src="Rohit.jpg" alt="chef 1">
+                    <h3>Rohit Kawang</h3>
+                    <p>Chef</p>
+                    <div class="social-media">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100077644094577" target="_blank"> <i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <img src="Aashish.jpg" alt="chef 2">
+                    <h3>Aashish Neupane</h3>
+                    <p>Chef</p>
+                    <div class="social-media">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/aashish.neupane.9216/" target="_blank"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/aashis_neupane/" target="_blank"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="profile-card long-name">
+                    <img src="saroj.jpg" alt="chef 3">
+                    <h3>Saroj Kumar Yadav</h3>
+                    <p>chef</p>
+                    <div class="social-media">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100042331296398" target="_blank"> <i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="footer-content">
+                <div class="footer-section contact">
+                    <h3>Contact</h3>
+                    <p> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; <a href="">+977 9800000000</a></p>
+                    <p> <i class="fa fa-envelope" aria-hidden="true">&nbsp;</i><a href="">ogrestaurant@gmail.com</a></p>
+                    <p><i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;</i>Lokanthali, Bhaktapur</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p> <a href="">About us</a></p>
+                    <p> <a href="">Privacy Policy</a></p>
+                    <p><a href="">Terms & Condition</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Fri: 10am - 10pm</p>
+                    <p>Sat - Sun: 11am - 11pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sign Up</h3>
+                    <form action="#">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <div class="copyright">
+            <p> © <a href="#home" >OGRestaurant</a>, All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
