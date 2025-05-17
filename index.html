@@ -47,13 +47,15 @@
                     <img src="logo.png" alt="image" height="120">
                 </div>
                 <div class="details">
-                    <ul id="sidebar">
-                        <li id="cross" onclick="hideSidebar()"><a ><i class="fa fa-times" aria-hidden="true"
-                                    style="color:white; "></i> CLOSE</a></li>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#menu" >MENU</a></li>
-                        <li><a href="#reserve" >RESERVATION</a></li>
-                        <li><a href="#aboutus" ">ABOUT US</a></li>
+                    <ul id="sidebar" style="text-align: right;">
+                        <li style="margin-right: 20px;" id="cross" onclick="hideSidebar()"><a style="font-size: 24px; font-weight: 300;" ><i class="fa fa-times" aria-hidden="true"
+                                    style="color:white; "></i> </a></li>
+                        <div id="sidebaritem">
+                            <li class="rightwalla"><a href="#home">HOME</a></li>
+                        <li class="rightwalla"><a href="#menu" >MENU</a></li>
+                        <li class="rightwalla"><a href="#reserve" >RESERVATION</a></li>
+                        <li class="rightwalla"><a href="#aboutus" ">ABOUT US</a></li>
+                        </div>
                         <!-- <li><a href="">ORDER ONLINE</a></li> -->   
                         <div id="hidden-buttons">
                             <button class="bt1"><a href="#reserve"> Find Table</a></button>
@@ -67,8 +69,8 @@
                         <li id="hide"><a href="#aboutus">ABOUT
                                 US</a></li>
                         <!-- <li id="hide"><a href="">ORDER ONLINE</a></li> -->
-                        <li id="info" onclick="showSidebar()"><a href="#"><i class="fa fa-bars" ari aria-hidden="true"
-                                    style="color: white;"></i> info
+                        <li  id="info" onclick="showSidebar()"><a href="#" style="font-size: 24px; "><i class="fa fa-bars" ari aria-hidden="true"
+                                    style="color: white;"></i> 
                             </a></li>
 
 
@@ -77,7 +79,7 @@
                 <div id="btn">
 
                    <a href="#reserve"><button class="bt1" id="hide">Find Table</button></a> 
-                    <button class="bt2" id="log" onclick="OpenLogin()">Log In</button>
+                    
                 </div>
             </div>
         </header>
@@ -85,7 +87,7 @@
             <div class="main-heading">
                 <h>"Experience authentic <br>Nepalese cuisine" </h>
                 <p>Savor culinary <b>EXCELLENCE</b> in a cozy ambiance.<br>
-                    <span id="highlight">Finest ingredients, warm hospitality,and</span>
+                    
                     <br> unforgettable flavors await you!
                 </p>
             </div>
@@ -383,18 +385,16 @@
             <div class="form-section">
                 <h1>Online Reservation</h1>
                 <p>Booking request <a href="tel:+9737643778">+9737643778</a> or fill out the form</p>
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <form id="reservationForm" >
                     <div class="input-group">
                         <input type="hidden" name="access_key" value="1939e676-02db-4786-94b5-b2beafad7be0">
-
-
+                
                         <input type="text" name="Customer Name" class="inputwalla" required>
                         <label for="name" class="labelwalla">Your Name</label>
-
-
-
+                
                         <input type="tel" class="inputwalla2" id="phone" name="phone" required>
                         <label for="phone" class="labelwalla2">Phone Number</label>
+                
                         <label for="persons" class="arko">Number of Persons</label>
                         <select id="persons" name="No. of Person:" required>
                             <option value="1">1 person</option>
@@ -407,20 +407,20 @@
                             <option value="8">8 persons</option>
                             <option value="9">9 persons</option>
                         </select>
-
+                
                         <label for="date" class="arko">Date</label>
                         <input type="date" id="date" name="date" required>
-
+                
                         <label for="time" class="arko">Time</label>
                         <input type="time" id="time" name="time" required>
-
+                
                         <label for="message" class="arko">Message</label>
                         <textarea id="message" name="message" placeholder="Type your message here!" required></textarea>
                     </div>
-
-
+                
                     <button type="submit">BOOK A TABLE</button>
                 </form>
+                
             </div>
         </div>
     </section>
@@ -545,13 +545,7 @@
                     <p>Mon - Fri: 10am - 10pm</p>
                     <p>Sat - Sun: 11am - 11pm</p>
                 </div>
-                <div class="footer-section">
-                    <h3>Sign Up</h3>
-                    <form action="#">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit">Sign Up</button>
-                    </form>
-                </div>
+                
             </div>
 
         </section>
@@ -559,7 +553,7 @@
             <p> © <a href="#home" >OGRestaurant</a>, Note: This is a 1st Sem Project with no original existence of the Restaurant.</p>
         </div>
     </section>
-    <a href="#home"><i class="fa fa-arrow-up " style="color: white; font-size: 40px; position: fixed; bottom: 50px; right: 20px;"></i></a>
+    <a href="#home"><i class="fa fa-arrow-up " style="color: white; font-size: 30px; position: fixed; bottom: 50px; right: 20px;"></i></a>
 
     <script src="java.js"></script>
 

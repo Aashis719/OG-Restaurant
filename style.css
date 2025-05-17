@@ -20,6 +20,13 @@
     border-bottom: 2px solid goldenrod;
     /* background:rgb(44, 44, 44) ; */
 }
+@media (max-width: 450px) {
+    .home {
+        /* background-image: url(Fourth.png); */
+        background-position: center;
+       background-attachment: fixed;
+    }
+}
 
 .firstnav {
     display: flex;
@@ -100,17 +107,29 @@
     display: none;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     background-color: rgba(255, 255, 255, 0);
     min-height: 50vh;
-    width: 30vh;
+    width: 20vh;
     backdrop-filter: blur(10px);
-    box-shadow: -5px 0px 10px 0px rgb(19, 19, 19);
+    /* box-shadow: -5px 0px 10px 0px rgb(19, 19, 19); */
     padding: 20px;
+    padding-top: 0px;
     z-index: 888;
-    top: 0;
+    top: 50px;
     right: 0;
     cursor: pointer;
+}
+#sidebaritem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+#sidebar .rightwalla{
+    margin-right: 20px;
+ 
 }
 
 #sidebar a {
@@ -122,7 +141,7 @@
 }
 
 .bt1 {
-    padding: 10px 20px;
+    padding: 10px 10px;
     letter-spacing: 5px;
     border: 2px solid goldenrod;
     background: none;
@@ -135,6 +154,11 @@
     transition: 0.8s;
     z-index: 1;
 
+}
+@media (max-width:450px){
+    .bt1{
+        font-size: 0.7rem;
+    }
 }
 
 .bt1:hover {
@@ -221,6 +245,12 @@
     #btn {
         display: none;
     }
+    #body1{
+        background-color:rgba(218, 165, 32, 0.877) ;
+        margin-top: 60px;
+       
+        
+    }
 
 }
 
@@ -245,6 +275,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
+
     /* border-bottom: 5px solid black; */
 
 }
@@ -268,10 +299,19 @@
     font-weight: bold;
 
 }
+@media (max-width:450px){
+    .main-heading h {
+        color: rgb(0, 0, 0);    }
+    #highlight{
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+    }
+}
 
 @media screen and (max-width:1000px) {
     .main-heading h {
         font-size: 3rem;
+        
     }
 
     .main-heading p {
@@ -1151,6 +1191,8 @@ color: #ffffff;
     .appetizer img,
     .dinner img {
         height: 200px;
+        width: 200px;
+        border-radius: 10px;
     }
 
     .breakfastphoto,
@@ -1800,6 +1842,7 @@ textarea {
 .footer-section {
     width: 200px;
     margin: 10px;
+    text-align: left;
 }
 
 .footer-section h3 {
@@ -1874,6 +1917,7 @@ textarea {
 
     .footer-section {
         width: 100%;
+        text-align: left;
     }
 }
 
