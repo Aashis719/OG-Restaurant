@@ -23,7 +23,7 @@ function hideSidebar() {
 
 function handleOutsideClick(event) {
     const sidebar = document.querySelector('#sidebar');
-    const infoButton = document.querySelector('#info'); // Prevent closing when clicking the "info" button
+    const infoButton = document.querySelector('#info'); // Prevent closing when clicking the "info" button.
 
     if (
         sidebar && 
