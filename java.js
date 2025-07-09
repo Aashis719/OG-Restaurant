@@ -17,7 +17,7 @@ function hideSidebar() {
     const sidebar = document.querySelector('#sidebar');
     sidebar.style.display = 'none';
 
-    // Remove outside click listener when sidebar is closed
+    // Remove outside click listener when sidebar is closed 
     document.removeEventListener('click', handleOutsideClick);
 }
 
