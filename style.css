@@ -98,7 +98,7 @@
     transition: 0.5s;
 }
 
-.details a:hover:after {
+.details a:hover:after { 
     width: 100%;
 }
 
