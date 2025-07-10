@@ -1,7 +1,7 @@
 function showSidebar() {
     const sidebar = document.querySelector('#sidebar');
     sidebar.style.display = 'flex';
-
+ 
     // Close on click outside
     document.addEventListener('click', handleOutsideClick);
 
