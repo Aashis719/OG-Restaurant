@@ -7,7 +7,7 @@ function showSidebar() {
 
     // Close on clicking any anchor inside sidebar
     const links = sidebar.querySelectorAll('a');
-    links.forEach(link => {
+    links.forEach(link => { 
         link.addEventListener('click', hideSidebar);
     });
 } 
