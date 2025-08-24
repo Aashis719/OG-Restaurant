@@ -7,7 +7,7 @@
 
 }
   
-.home {
+.home { 
     background-image: url(bg.png); 
 
     /* background: linear-gradient(to bottom , yellow,orange,red); */
@@ -1902,4 +1902,5 @@ textarea {
 .social-media {
     display: flex;
     justify-content: space-evenly;
+
 }
