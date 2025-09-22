@@ -6,7 +6,7 @@ function showSidebar() {
     document.addEventListener('click', handleOutsideClick);
 
     // Close on clicking any anchor inside sidebar
-    const links = sidebar.querySelectorAll('a');
+    const links = sidebar.querySelectorAll('a'); 
     links.forEach(link => { 
         link.addEventListener('click', hideSidebar);
     });
@@ -63,4 +63,5 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
         console.error("Error:", error);
         alert("There was an error submitting the form.");
     });
+
 });
