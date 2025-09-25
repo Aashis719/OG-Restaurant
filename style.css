@@ -8,7 +8,7 @@
 }
    
 .home { 
-    background-image: url(bg.png); 
+    background-image: url(bg.png);  
 
     /* background: linear-gradient(to bottom , yellow,orange,red); */
     background-position: center center;
@@ -1904,4 +1904,5 @@ textarea {
     justify-content: space-evenly;
 
 }
+
 
