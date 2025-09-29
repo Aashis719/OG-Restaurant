@@ -9,7 +9,7 @@ function showSidebar() {
     const links = sidebar.querySelectorAll('a'); 
     links.forEach(link => { 
         link.addEventListener('click', hideSidebar);
-    });
+    }); 
 } 
 
 function hideSidebar() {
@@ -65,3 +65,4 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
     });
 
 });
+
